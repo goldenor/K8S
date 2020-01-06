@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx
+  labels:
+     type: front-end
+spec:
+  containers:
+     - name: nginx
+       image: nginx
+
+  schedulerName: golden-scheduler
+
